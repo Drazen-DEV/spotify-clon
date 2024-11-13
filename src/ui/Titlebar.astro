@@ -1,6 +1,32 @@
 ---
+import { Icon } from "astro-icon/components"
 ---
 
+<style>
+    .container {
+        display: flex;
+        background: var(--dark-bgcolor);
+        height: 100%;
+        color: var(--light-textcolor);
+    }
+
+    .control-so {
+        display: flex;
+    }
+</style>
+
 <div class="container">
-    Titlebar
+    <div class="dots">...</div>
+
+    <div class="control-so">
+        <div class="button">
+            <Icon name="minimize" />
+        </div>
+        <div class="button">
+            <Icon name="maximize" />
+        </div>
+        <div class="button">
+            <Icon name="close" />
+        </div>
+    </div>
 </div>
