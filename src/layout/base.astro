@@ -10,6 +10,14 @@ const { title } = Astro.props;
         --border-radius: 15px;
 
         --light-textcolor: #fff;
+        --dark-textcolor: #a7a39f;
+        --pinned-textcolor: #1ed45e;
+
+        --default-font: "Open Sans", sans-serif, system-ui;
+    }
+
+    html {
+        color-scheme: dark;
     }
 
     body {
@@ -20,7 +28,7 @@ const { title } = Astro.props;
 <html lang="es">
     <head>
         <meta charset="utf-8" />
-        <Link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>{ title }</title>

@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0.25rem 0;
+        font-family: var(--default-font);
+        font-weight: 500;
+        font-size: 0.85rem;
+    }
+
+    .row {
+        display: flex;
+        padding: 0.75rem 1rem;
+        gap: 0 1rem;
+
+        &:hover {
+            background: #222;
+            cursor: pointer;
+        }
+
+        & [data-icon] {
+            font-size: 1.25rem;
+            color: var(--dark-textcolor);
+        }
+
+        & span {
+            color: var(--dark-textcolor);
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <Icon name="home" />
+        <span>Inicio</span>
+    </div>
+    <div class="row">
+        <Icon name="search" />
+        <span>Buscar</span>
+    </div>
+</div>
+
